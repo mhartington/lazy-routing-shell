@@ -9,18 +9,15 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
-  public appPages = [
-    {
-      title: 'Home',
-      url: '/home',
-      icon: 'home'
-    },
-    {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    }
+  public pages = [
+    { url: '/app/chores-dashboard', title: 'Dashboard' },
+    { url: '/app/my-account',       title: 'My Account' },
+    { url: '/app/activity',         title: 'Activity' },
+    { url: '/switch-accounts',  title: 'Switch Accounts' },
+    { url: '/app/help',             title: 'Help' },
+    { url: '/enrollment',       title: 'Enrollment' }
   ];
+
 
   constructor(
     private platform: Platform,
