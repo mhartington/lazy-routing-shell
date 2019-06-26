@@ -32,11 +32,13 @@ Notice that in the `loadChildren` property of each routing declaration, we are p
 
 We are also setting a preloading strategy to preload all modules as quickly as possible as seen in the code below.
 
-```@NgModule({
+```
+@NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
   ],
   exports: [RouterModule]
-})```
+})
+```
 
 You could set this to `NoPreloading` if you did not want to preload any modules. Using one or the other should be a data-driven decision based on usage patterns and the business case for your users.
